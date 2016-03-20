@@ -60,12 +60,12 @@
 
 (defn extranapkins [x]
   (loop [so-far "Fuck off"
-         i 0]
-    (if (>= i x)
+         i 1]
+    (if (> i x)
       so-far
       (recur (extranapkin so-far) (inc i)))))
 
 (defn -main
   "I don't do a whole lot ... yet."
   [& args]
-  (println (extranapkins 5)))
+  (println (extranapkins 109)))
