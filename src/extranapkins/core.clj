@@ -56,10 +56,10 @@
 
 (defn extranapkin [s]
   (let [n (number->words (count (string/split s #" ")))]
-    (str "I've got " n " words for you: " s)))
+    (str "I've got " n " words, and " n " words only for you: " s)))
 
 (defn extranapkins [x]
-  (loop [so-far "Fuck off"
+  (loop [so-far "mossy. loam."
          i 1]
     (if (> i x)
       so-far
@@ -68,4 +68,4 @@
 (defn -main
   "I don't do a whole lot ... yet."
   [& args]
-  (println (extranapkins 109)))
+  (println (extranapkins 20)))
